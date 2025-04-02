@@ -1,34 +1,38 @@
-ROADMAP PROJETO DE POWER BI UNIVERSIDADE 
+# Roadmap do Projeto de Power BI - Universidade
 
+## 1. Extração de Dados
+- Extrair os dados da base utilizando Power Query.
 
-1 - EXTRAIR OS DADOS DA BASE PELO POWER QUERY; 
+## 2. Transformação de Dados (Power Query)
+- Ajustar os tipos de dados das colunas para formato adequado (ex: converter para texto quando necessário).
+- Criar uma referência para a coluna **Curso** e gerar uma dimensão separada (**Tabela_Curso**):
+  - Remover duplicatas
+  - Excluir outras tabelas desnecessárias
+- Criar todas as referências de colunas para a estrutura **Fato-Dimensão**.
 
-2 - ( TEMA: POWER QUERY ) 
-   - MUDAR O TIPO DOS DADOS DAS COLUNAS PARA TEXTO. 
+## 3. Modelagem de Dados
+- Analisar como as tabelas estão relacionadas.
+- Criar e validar os relacionamentos entre tabelas.
 
-3 - ( TEMA: POWER QUERY )
-   - CRIANDO UM REFERENCIA PARA A COLUNA CURSO, CRIANDO UM DIMESSÃO PARA A 
-COLUNA CURSO, => TABELA_CURSO => ESCLUIR OUTRAS_TABELAS = > REMOVER_DUPLICATA
+## 4. Construção do Relatório (Exibição)
+### 4.1 Layout e Design
+- Inserir imagens de fundo para diferentes áreas do relatório (Aluno, Campus, Financeiro, etc.).
+- Aplicar estilos visuais consistentes ao relatório.
 
+### 4.2 Criação de Medidas
+- Criar medidas para análise financeira:
+  - Exemplo: **FAT_INADIMPLENTE** = SOMASE(Inadimplente)
 
-4 - ( TEMA: POWER QUERY )
-   - CRIAR TODAS AS REFERENCIAS DE COLUNAS FAT_DIMESSÃO
+### 4.3 Construção de Gráficos
+- Criar gráfico de barras para análise de inadimplência por curso:
+  - **Eixo Y**: Cursos
+  - **Eixo X**: FAT_INADIMPLENTE
+- Aplicar um estilo visual clean aos gráficos para melhor legibilidade e apresentação.
 
-5 - ( TEMA:EXIBIÇÃO DE MODELO)  
-   - ANALISAR COMO FOI FEITOS JOIN 
+## 5. Revisão e Ajustes Finais
+- Revisar a exibição e a performance do relatório.
+- Ajustar filtros, interações e layout conforme necessário.
 
-6 - ( TEMA: EXIBIÇÃO DE RELATÓRIO)
-   - INSERIR AS IMAGEM DE LAYOUT DE FUNDO: ALUNO,CAMPUS,FINANCEIRO...ETC
-
-7 - ( TEMA: EXIBIÇÃO DE RELATÓRIO )
-  - CRIAR COLUNA DE MEDIDAS: 
-     - CRIAR MEDIDA DE FAT_INADIPLENTE = SOMASE = "INADIPLENTE"
-
-8 - ( TEMA: EXIBIÇÃO DE RELATÓRIO )
-   -  CRIAR GRAFICOS DE BARRAS; 
-       - EIXO Y:   CURSOS
-       - EIXO X:   FAT_INADIPLENTE 
-
-
-
+---
+Este roadmap fornece uma visão clara das etapas do projeto, garantindo uma estrutura bem definida para a criação do relatório no Power BI.
 
