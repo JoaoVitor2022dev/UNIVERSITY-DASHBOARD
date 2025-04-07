@@ -33,6 +33,19 @@
 - Revisar a exibição e a performance do relatório.
 - Ajustar filtros, interações e layout conforme necessário.
 
+
+
+-- 6. Construção de Gráficos
+Corrigir o tipo da coluna Idade (estava como texto/string; converter para número).
+
+Criar gráfico de matriz com exibição em porcentagem.
+
+Criar gráfico de colunas para análise visual dos dados.
+
+Criar medidas e colunas calculadas utilizando fórmulas DAX, organizando os elementos nas pastas apropriadas (ex: pasta "Medidas").
+
+
+
 ---
 Este roadmap fornece uma visão clara das etapas do projeto, garantindo uma estrutura bem definida para a criação do relatório no Power BI.
 
