@@ -1,51 +1,79 @@
-# Roadmap do Projeto de Power BI - Universidade
+# 📊 Roadmap do Projeto de Power BI - Universidade
 
-## 1. Extração de Dados
-- Extrair os dados da base utilizando Power Query.
+Este roadmap fornece uma visão clara das etapas do projeto, garantindo uma estrutura bem definida para a criação do relatório no Power BI em um contexto universitário.
 
-## 2. Transformação de Dados (Power Query)
-- Ajustar os tipos de dados das colunas para formato adequado (ex: converter para texto quando necessário).
-- Criar uma referência para a coluna **Curso** e gerar uma dimensão separada (**Tabela_Curso**):
+---
+
+## 1. 📥 Extração de Dados
+
+- Extrair os dados da base utilizando **Power Query**.
+
+---
+
+## 2. 🔄 Transformação de Dados (Power Query)
+
+- Ajustar os tipos de dados das colunas para o formato adequado  
+  *(ex: converter para texto, número, data, etc.)*.
+
+- Criar uma **referência para a coluna Curso** e gerar uma dimensão separada (`Tabela_Curso`):
   - Remover duplicatas
-  - Excluir outras tabelas desnecessárias
+  - Excluir colunas desnecessárias
+
 - Criar todas as referências de colunas para a estrutura **Fato-Dimensão**.
 
-## 3. Modelagem de Dados
-- Analisar como as tabelas estão relacionadas.
-- Criar e validar os relacionamentos entre tabelas.
+---
 
-## 4. Construção do Relatório (Exibição)
-### 4.1 Layout e Design
-- Inserir imagens de fundo para diferentes áreas do relatório (Aluno, Campus, Financeiro, etc.).
+## 3. 🔗 Modelagem de Dados
+
+- Analisar como as tabelas estão relacionadas.
+- Criar e validar os relacionamentos entre **fatos** e **dimensões**.
+
+---
+
+## 4. 🧱 Construção do Relatório (Exibição)
+
+### 4.1 🎨 Layout e Design
+
+- Inserir imagens de fundo para diferentes áreas do relatório  
+  *(Aluno, Campus, Financeiro, etc.)*.
 - Aplicar estilos visuais consistentes ao relatório.
 
-### 4.2 Criação de Medidas
-- Criar medidas para análise financeira:
-  - Exemplo: **FAT_INADIMPLENTE** = SOMASE(Inadimplente)
+### 4.2 🧮 Criação de Medidas (DAX)
 
-### 4.3 Construção de Gráficos
-- Criar gráfico de barras para análise de inadimplência por curso:
-  - **Eixo Y**: Cursos
+- Criar medidas para análise financeira:  
+  `FAT_INADIMPLENTE = SOMASE(Inadimplente)`
+
+### 4.3 📊 Construção de Gráficos
+
+- Gráfico de barras para análise de **inadimplência por curso**:
+  - **Eixo Y**: Cursos  
   - **Eixo X**: FAT_INADIMPLENTE
-- Aplicar um estilo visual clean aos gráficos para melhor legibilidade e apresentação.
 
-## 5. Revisão e Ajustes Finais
+- Aplicar um estilo visual **clean** aos gráficos para melhor legibilidade e apresentação.
+
+---
+
+## 5. 🔍 Revisão e Ajustes Finais
+
 - Revisar a exibição e a performance do relatório.
 - Ajustar filtros, interações e layout conforme necessário.
 
+---
 
+## 6. 🚀 Análises Avançadas e Recursos Interativos
 
--- 6. Construção de Gráficos
-Corrigir o tipo da coluna Idade (estava como texto/string; converter para número).
+- Corrigir o tipo da coluna **Idade** (de texto para número).
 
-Criar gráfico de matriz com exibição em porcentagem.
+- Criar gráficos adicionais:
+  - Matriz com exibição percentual
+  - Colunas agrupadas para comparações visuais
+  - Gráficos de pontos para análise exploratória
 
-Criar gráfico de colunas para análise visual dos dados.
+- Criar **medidas e colunas calculadas** usando fórmulas DAX otimizadas.
 
-Criar medidas e colunas calculadas utilizando fórmulas DAX, organizando os elementos nas pastas apropriadas (ex: pasta "Medidas").
+- Organizar os elementos (gráficos, medidas, filtros) em **pastas apropriadas** (ex: `Medidas`, `Acadêmico`, `Financeiro`).
 
-
+- Criar **botão de troca de tela** para navegação entre diferentes áreas do relatório.
 
 ---
-Este roadmap fornece uma visão clara das etapas do projeto, garantindo uma estrutura bem definida para a criação do relatório no Power BI.
 

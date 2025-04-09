@@ -1,83 +1,79 @@
 # 📊 Roadmap do Projeto de Power BI - Universidade
 
-Este roadmap fornece uma visão clara e estruturada das etapas necessárias para a construção de um relatório completo no Power BI, aplicável a contextos universitários. Cada módulo representa uma fase do projeto, com tarefas específicas para garantir qualidade, consistência e performance na análise de dados.
+Este roadmap fornece uma visão clara das etapas do projeto, garantindo uma estrutura bem definida para a criação do relatório no Power BI em um contexto universitário.
 
 ---
 
-## 📥 Módulo 1: Extração de Dados
+## 1. 📥 Extração de Dados
 
-- Realizar a importação dos dados utilizando o **Power Query**.
+- Extrair os dados da base utilizando **Power Query**.
 
 ---
 
-## 🔄 Módulo 2: Transformação de Dados (Power Query)
+## 2. 🔄 Transformação de Dados (Power Query)
 
-- Ajustar os tipos de dados das colunas  
-  *(ex: converter texto, número, data conforme necessário)*.
-  
-- Criar uma **tabela de dimensão para Curso**:
+- Ajustar os tipos de dados das colunas para o formato adequado  
+  *(ex: converter para texto, número, data, etc.)*.
+
+- Criar uma **referência para a coluna Curso** e gerar uma dimensão separada (`Tabela_Curso`):
   - Remover duplicatas
-  - Manter apenas colunas relevantes
+  - Excluir colunas desnecessárias
 
-- Criar outras tabelas de dimensão com base nas colunas da tabela fato, conforme estrutura de modelagem **Fato-Dimensão**.
-
----
-
-## 🔗 Módulo 3: Modelagem de Dados
-
-- Analisar e compreender o relacionamento entre as tabelas.
-- Estabelecer relacionamentos entre **fatos** e **dimensões** de forma correta.
+- Criar todas as referências de colunas para a estrutura **Fato-Dimensão**.
 
 ---
 
-## 📐 Módulo 4: Construção do Relatório (Exibição)
+## 3. 🔗 Modelagem de Dados
 
-### 🎨 4.1 Layout e Design
+- Analisar como as tabelas estão relacionadas.
+- Criar e validar os relacionamentos entre **fatos** e **dimensões**.
 
-- Inserir imagens de fundo específicas para diferentes áreas do relatório  
-  *(Aluno, Campus, Financeiro etc.)*.
-- Aplicar paleta de cores e estilos visuais consistentes.
+---
 
-### 🧮 4.2 Criação de Medidas (DAX)
+## 4. 🧱 Construção do Relatório (Exibição)
 
-- Criar medidas específicas para análise financeira e institucional:  
+### 4.1 🎨 Layout e Design
+
+- Inserir imagens de fundo para diferentes áreas do relatório  
+  *(Aluno, Campus, Financeiro, etc.)*.
+- Aplicar estilos visuais consistentes ao relatório.
+
+### 4.2 🧮 Criação de Medidas (DAX)
+
+- Criar medidas para análise financeira:  
   `FAT_INADIMPLENTE = SOMASE(Inadimplente)`
 
-- Organizar as medidas em pastas como:
-  - Financeiro
-  - Acadêmico
-  - Demográfico
+### 4.3 📊 Construção de Gráficos
 
-### 📊 4.3 Construção de Gráficos
-
-- Gráfico de barras para **inadimplência por curso**:
+- Gráfico de barras para análise de **inadimplência por curso**:
   - **Eixo Y**: Cursos  
-  - **Eixo X**: `FAT_INADIMPLENTE`
+  - **Eixo X**: FAT_INADIMPLENTE
 
-- Aplicar visual **clean e moderno** para facilitar a leitura e apresentação dos dados.
-
----
-
-## ✅ Módulo 5: Revisão e Ajustes Finais
-
-- Revisar a disposição visual e a performance do relatório.
-- Verificar interações, filtros e segmentações.
-- Corrigir eventuais inconsistências no layout.
+- Aplicar um estilo visual **clean** aos gráficos para melhor legibilidade e apresentação.
 
 ---
 
-## 🚀 Módulo 6: Análises Avançadas e Otimizações
+## 5. 🔍 Revisão e Ajustes Finais
 
-- Corrigir tipos de colunas mal configuradas  
-  *(ex: converter a coluna "Idade" de texto para número)*.
+- Revisar a exibição e a performance do relatório.
+- Ajustar filtros, interações e layout conforme necessário.
+
+---
+
+## 6. 🚀 Análises Avançadas e Recursos Interativos
+
+- Corrigir o tipo da coluna **Idade** (de texto para número).
 
 - Criar gráficos adicionais:
   - Matriz com exibição percentual
   - Colunas agrupadas para comparações visuais
+  - Gráficos de pontos para análise exploratória
 
-- Desenvolver **medidas e colunas calculadas** usando fórmulas DAX otimizadas.
+- Criar **medidas e colunas calculadas** usando fórmulas DAX otimizadas.
 
-- Organizar todos os elementos (gráficos, medidas, filtros) em **categorias e pastas** para facilitar a navegação.
+- Organizar os elementos (gráficos, medidas, filtros) em **pastas apropriadas** (ex: `Medidas`, `Acadêmico`, `Financeiro`).
+
+- Criar **botão de troca de tela** para navegação entre diferentes áreas do relatório.
 
 ---
 
