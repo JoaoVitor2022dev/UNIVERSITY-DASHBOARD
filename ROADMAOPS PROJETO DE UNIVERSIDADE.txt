@@ -1,79 +1,95 @@
-# 📊 Roadmap do Projeto de Power BI - Universidade
+# 📊 Projeto Power BI - Universidade
 
-Este roadmap fornece uma visão clara das etapas do projeto, garantindo uma estrutura bem definida para a criação do relatório no Power BI em um contexto universitário.
-
----
-
-## 1. 📥 Extração de Dados
-
-- Extrair os dados da base utilizando **Power Query**.
+Este repositório contém o desenvolvimento de um relatório interativo em Power BI para análise de dados universitários. O objetivo é apresentar insights relevantes por meio de uma estrutura bem definida, seguindo boas práticas de modelagem e visualização de dados.
 
 ---
 
-## 2. 🔄 Transformação de Dados (Power Query)
+## 🛣️ Roadmap do Projeto
 
-- Ajustar os tipos de dados das colunas para o formato adequado  
-  *(ex: converter para texto, número, data, etc.)*.
+### 1. 📥 Extração de Dados
 
-- Criar uma **referência para a coluna Curso** e gerar uma dimensão separada (`Tabela_Curso`):
-  - Remover duplicatas
-  - Excluir colunas desnecessárias
-
-- Criar todas as referências de colunas para a estrutura **Fato-Dimensão**.
+- Importação dos dados utilizando **Power Query**.
 
 ---
 
-## 3. 🔗 Modelagem de Dados
+### 2. 🔄 Transformação de Dados (Power Query)
 
-- Analisar como as tabelas estão relacionadas.
-- Criar e validar os relacionamentos entre **fatos** e **dimensões**.
+- Ajuste dos tipos de dados (ex: texto, número, data).
+- Criação da dimensão `Tabela_Curso`:
+  - Referência da coluna `Curso`
+  - Remoção de duplicatas
+  - Exclusão de colunas desnecessárias
+- Criação de outras **dimensões** necessárias.
+- Estruturação do modelo no formato **Fato-Dimensão**.
 
 ---
 
-## 4. 🧱 Construção do Relatório (Exibição)
+### 3. 🔗 Modelagem de Dados
 
-### 4.1 🎨 Layout e Design
+- Análise das tabelas e suas relações.
+- Criação e validação de relacionamentos entre **fatos** e **dimensões**.
 
-- Inserir imagens de fundo para diferentes áreas do relatório  
-  *(Aluno, Campus, Financeiro, etc.)*.
-- Aplicar estilos visuais consistentes ao relatório.
+---
 
-### 4.2 🧮 Criação de Medidas (DAX)
+### 4. 🧱 Construção do Relatório
 
-- Criar medidas para análise financeira:  
-  `FAT_INADIMPLENTE = SOMASE(Inadimplente)`
+#### 4.1 🎨 Layout e Design
 
-### 4.3 📊 Construção de Gráficos
+- Inserção de imagens de fundo por área temática:
+  - Aluno, Campus, Financeiro, etc.
+- Aplicação de um visual limpo e padronizado.
 
-- Gráfico de barras para análise de **inadimplência por curso**:
+#### 4.2 🧮 Medidas (DAX)
+
+- Criação de medidas personalizadas para análise:
+  - Exemplo: `FAT_INADIMPLENTE = SOMASE(Inadimplente)`
+
+#### 4.3 📊 Visualizações
+
+- Gráfico de barras: **Inadimplência por curso**
   - **Eixo Y**: Cursos  
   - **Eixo X**: FAT_INADIMPLENTE
-
-- Aplicar um estilo visual **clean** aos gráficos para melhor legibilidade e apresentação.
-
----
-
-## 5. 🔍 Revisão e Ajustes Finais
-
-- Revisar a exibição e a performance do relatório.
-- Ajustar filtros, interações e layout conforme necessário.
+- Estilo clean e focado na legibilidade.
 
 ---
 
-## 6. 🚀 Análises Avançadas e Recursos Interativos
+### 5. 🔍 Revisão e Ajustes Finais
 
-- Corrigir o tipo da coluna **Idade** (de texto para número).
-
-- Criar gráficos adicionais:
-  - Matriz com exibição percentual
-  - Colunas agrupadas para comparações visuais
-  - Gráficos de pontos para análise exploratória
-
-- Criar **medidas e colunas calculadas** usando fórmulas DAX otimizadas.
-
-- Organizar os elementos (gráficos, medidas, filtros) em **pastas apropriadas** (ex: `Medidas`, `Acadêmico`, `Financeiro`).
-
-- Criar **botão de troca de tela** para navegação entre diferentes áreas do relatório.
+- Otimização da performance do relatório.
+- Ajustes de filtros, interações e layout.
 
 ---
 
+### 6. 🚀 Análises Avançadas e Recursos Interativos
+
+- Conversão da coluna **Idade** para tipo numérico.
+- Adição de visualizações avançadas:
+  - Matriz com percentuais
+  - Gráficos de colunas agrupadas
+  - Gráficos de dispersão (pontos)
+- Criação de **medidas e colunas calculadas** com fórmulas DAX otimizadas.
+- Organização de elementos em **pastas temáticas** (ex: `Medidas`, `Acadêmico`, `Financeiro`).
+- Implementação de **botões de navegação** entre páginas do relatório.
+
+---
+
+### 7. 🧭 Navegação e Indicadores Dinâmicos
+
+- Construção e customização dos **botões de transição entre páginas**.
+- Uso de segmentações específicas para cada tela do relatório.
+- Criação de **indicadores visuais (KPIs)** para destacar métricas relevantes.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```plaintext
+📊 PowerBI-Universidade
+├── README.md
+├── Relatorio.pbix
+├── assets/
+│   └── imagens/
+├── medidas/
+│   └── DAX_medidas.txt
+└── dados/
+    └── base_universidade.xlsx
