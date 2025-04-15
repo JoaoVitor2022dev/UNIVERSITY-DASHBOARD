@@ -79,6 +79,25 @@ Este repositório contém o desenvolvimento de um relatório interativo em Power
 - Uso de segmentações específicas para cada tela do relatório.
 - Criação de **indicadores visuais (KPIs)** para destacar métricas relevantes.
 
+
+### 8. 🧭 Navegação e Indicadores Dinâmicos
+
+- **Criação de Variáveis:**  
+  Definição de variáveis que facilitam a navegação entre páginas e a personalização dos indicadores.
+
+- **Uso de Variáveis Alternativas:**  
+  Aplicação de diferentes variáveis de acordo com o contexto ou necessidade da análise.
+
+- **Concatenação de Variáveis:**  
+  Combinação de variáveis para gerar títulos, filtros ou visualizações dinâmicas de forma automatizada.
+
+
+### 9.  POWER QUERY 
+
+- CRIAR dimensão DAS COLUNAS ( ALUNO/ MATRICULA/ DP) 
+- CRIAR TABELA COM ESSAS INFORMAÇÕES    
+
+
 ---
 
 ## 📁 Estrutura do Projeto
