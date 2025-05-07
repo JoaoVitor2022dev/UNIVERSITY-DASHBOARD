@@ -1,5 +1,7 @@
 # 📊 Projeto Power BI - Universidade
 
+![image](https://github.com/user-attachments/assets/2cc0cc2e-2718-4cea-9c0e-cc94098d04a4)
+
 Este repositório contém o desenvolvimento de um relatório interativo em Power BI para análise de dados universitários. O objetivo é apresentar insights relevantes por meio de uma estrutura bem definida, seguindo boas práticas de modelagem e visualização de dados.
 
 ---
@@ -21,6 +23,8 @@ Este repositório contém o desenvolvimento de um relatório interativo em Power
   - Exclusão de colunas desnecessárias
 - Criação de outras **dimensões** necessárias.
 - Estruturação do modelo no formato **Fato-Dimensão**.
+
+![image](https://github.com/user-attachments/assets/d0df9bf8-5579-4bcf-ac2d-43d67e11db76)
 
 ---
 
