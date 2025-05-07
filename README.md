@@ -2,6 +2,8 @@
 
 ![image](https://github.com/user-attachments/assets/2cc0cc2e-2718-4cea-9c0e-cc94098d04a4)
 
+![image](https://github.com/user-attachments/assets/d0df9bf8-5579-4bcf-ac2d-43d67e11db76)
+
 Este repositório contém o desenvolvimento de um relatório interativo em Power BI para análise de dados universitários. O objetivo é apresentar insights relevantes por meio de uma estrutura bem definida, seguindo boas práticas de modelagem e visualização de dados.
 
 ---
@@ -23,8 +25,6 @@ Este repositório contém o desenvolvimento de um relatório interativo em Power
   - Exclusão de colunas desnecessárias
 - Criação de outras **dimensões** necessárias.
 - Estruturação do modelo no formato **Fato-Dimensão**.
-
-![image](https://github.com/user-attachments/assets/d0df9bf8-5579-4bcf-ac2d-43d67e11db76)
 
 ---
 
@@ -95,17 +95,4 @@ Este repositório contém o desenvolvimento de um relatório interativo em Power
 - **Concatenação de Variáveis:**  
   Combinação de variáveis para gerar títulos, filtros ou visualizações dinâmicas de forma automatizada.
 
----
 
-## 📁 Estrutura do Projeto
-
-```plaintext
-📊 PowerBI-Universidade
-├── README.md
-├── Relatorio.pbix
-├── assets/
-│   └── imagens/
-├── medidas/
-│   └── DAX_medidas.txt
-└── dados/
-    └── base_universidade.xlsx
